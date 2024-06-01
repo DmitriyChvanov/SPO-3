@@ -1,0 +1,28 @@
+.BannerSecond_main {
+    background-image: url("./../../assets/img/Banner2_bg.png") ;
+    background-color: #F6F3F0;
+    height: 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+
+.BannerSecond_main a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.card_txt h2{
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.card_txt{
+    margin-right: 100px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

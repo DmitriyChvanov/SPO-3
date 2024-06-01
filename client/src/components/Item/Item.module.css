@@ -1,0 +1,32 @@
+.main_item{
+    width: 270px;
+    height: 350px;
+    background: #F4F1ED;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.main_item a{
+    text-decoration: none;
+    color: black;
+}
+
+.txt{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card_info{
+    display: flex;
+    justify-content: space-between;
+    height: 310px;
+    align-items: flex-end;
+}
+
+.price{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+

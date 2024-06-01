@@ -1,0 +1,11 @@
+.main_item_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 90px ;
+    justify-content: center;
+    width: 1440px;
+    gap: 25px;
+    margin: 0 auto;
+
+}

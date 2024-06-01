@@ -1,0 +1,30 @@
+.BannerFourth_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEEDE9;
+    height: 400px;
+}
+
+.BannerFourth_main a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.card{
+    background-image: url('./../../assets/img/Banner4_bg.jpg');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1360px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_txt{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

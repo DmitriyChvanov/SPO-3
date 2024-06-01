@@ -1,0 +1,43 @@
+.map_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.map_container{
+    width: 1200px;
+    height: 560px;
+    background-image: url("./../../assets/img/map_bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt_card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 100px;
+    
+}
+
+.txt_card a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.txt_card h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

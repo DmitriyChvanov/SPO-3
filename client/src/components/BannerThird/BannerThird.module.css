@@ -1,0 +1,22 @@
+.BannerThird_main{
+    margin: 120px 100px;
+    
+    height: 660px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-image: url('./../../assets/img/Banner3_bg.png');
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 580px;
+}
+
+.card_txt{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    width: 1170px;
+    height: 580px;
+}

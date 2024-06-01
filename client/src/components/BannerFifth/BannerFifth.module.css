@@ -1,0 +1,22 @@
+.BannerFifth_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    gap: 70px;
+}
+
+.BannerFifth_main a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.txt_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}

@@ -1,0 +1,20 @@
+.MyBtn{
+    border-radius: 2px;
+    display: flex;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0;
+    border: 1px solid #B3BAC1;
+    padding: 5px 20px;
+    transition-duration: 0.4s;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.MyBtn:hover {
+    background: #F0ECE9;
+}
+
+
