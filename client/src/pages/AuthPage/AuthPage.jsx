@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import styles from './AuthPage.module.css';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { LOGIN_ROUTE, REGISTARTION_ROUTE, } from '../../utils/consts';
-import { login, registartion } from '../../http/userAPI';
+import { LOGIN_ROUTE, REGISTRATION_ROUTE, } from '../../utils/consts';
+import { login, registration } from '../../http/userAPI';
 import { Context } from '../../index';
 import { MAIN_ROUTE } from '../../utils/consts';
 
@@ -15,18 +15,19 @@ const AuthPage = () => {
  };
      const {user} = useContext(Context)
      const location = useLocation()
-     const isLogin = location.pathname == LOGIN_ROUTE
+     const isLogin = location.pathname === LOGIN_ROUTE
      const navigate = useNavigate()
      const auth = async () => {
        try {
            let data;
            if (isLogin) {
-             data= await login(email, password) 
+             data = await login(email, password) 
            } else {
-             data= await registartion(email, password)
+             data = await registration(email, password)
            }
          user.setUser(user)
          user.setIsAuth(true)
+         user.setEmail(email)
          navigate(MAIN_ROUTE)
        } catch (e) {
          alert(e.response.data.message)
@@ -55,7 +56,7 @@ const AuthPage = () => {
          ?
         
          <div className={styles.question_box}>
-             <NavLink to={REGISTARTION_ROUTE} className={styles.question}>Нет аккаунта?</NavLink>
+             <NavLink to={REGISTRATION_ROUTE} className={styles.question}>Нет аккаунта?</NavLink>
          </div>
          
          :

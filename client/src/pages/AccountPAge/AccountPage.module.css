@@ -1,0 +1,37 @@
+.main_account{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_account h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 30px 90px;
+}
+
+.order{
+    display: flex;
+    flex-direction: column;
+    background: #F4F1ED;
+    width: 100%;
+    padding: 20px 90px;
+}
+
+.order_cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card{
+    height: 170px;
+    width: 100px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+

@@ -10,7 +10,7 @@ const Item = ({item}) => {
     
 
     return(
-        <div className={styles.main_item} style={{background: `url(${bg})`}}>
+        <div className={styles.main_item} style={{background: `url(http://localhost:5000/${bg})`}}>
                 <Link to={ITEM_ROUTE + '/' + item.id}>
                     <div className={styles.card_info}>
                         <div className={styles.txt}>{item.name}</div>

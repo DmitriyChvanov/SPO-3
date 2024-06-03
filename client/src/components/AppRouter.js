@@ -7,7 +7,7 @@ import { useContext } from 'react';
 const AppRouter = () => {
     const {user} = useContext(Context)
 
-    console.log(user)
+    console.log(user.email)
     return(
             <Routes>
                     {authRoutes.map(({path, Component}) => 

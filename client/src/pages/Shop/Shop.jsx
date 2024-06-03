@@ -1,12 +1,25 @@
+import { useContext, useEffect } from "react"
 import BannerFifth from "../../components/BannerFifth/BannerFifth"
 import ItemList from "../../components/ItemList/ItemList"
 import MyBtn from "../../components/MyBtn/MyBtn"
 import MyFooter from "../../components/MyFooter/MyFooter"
 import MyMap from "../../components/MyMap/MyMap"
 import MyHeader from "../../components/header/MyHeader"
+import { fetchItems } from "../../http/itemAPI"
 import styles from "./Shop.module.css"
+import { Context } from "../.."
 
 const Shop = () => {
+
+    const {item} = useContext(Context)
+
+    useEffect(() => {
+        fetchItems().then(data => item.setItems(data.rows), [])
+    })
+    
+
+
+
     return(
         <div>
             <MyHeader/>

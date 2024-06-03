@@ -1,16 +1,20 @@
 import { BrowserRouter } from "react-router-dom";
-import MyHeader from "./components/header/MyHeader";
-import MainPage from "./pages/main/MainPage";
 import "./reset.css"
 import AppRouter from "./components/AppRouter";
-import MyFooter from "./components/MyFooter/MyFooter";
+import { observer } from "mobx-react-lite";
+import { useContext } from "react";
+import { Context } from ".";
 
-function App() {
+const App = observer(() => {
+  const {user} = useContext(Context)
+
+  // console.log(user.name)
+
   return (
    <BrowserRouter>
       <AppRouter/>
    </BrowserRouter>
   );
-}
+})
 
 export default App;

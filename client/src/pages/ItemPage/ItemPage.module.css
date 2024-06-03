@@ -1,0 +1,48 @@
+.hasan hr {
+    color: #DBDCE0;
+    margin: 0;
+    border: none; /* Убираем границу для браузера Firefox */
+    background-color: #DBDCE0; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+}
+
+.main_itempage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main_itempage img{
+    height: 650px;
+}
+
+.txt_area{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    width: 370px;
+    gap: 70px;
+}
+
+.txt_area h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.txt_area h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.price h2{
+    margin-top: 35px;
+}

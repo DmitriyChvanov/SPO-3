@@ -1,0 +1,68 @@
+.main_basket{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.basket_card{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    gap: 20px;
+}
+
+.basket_card img{
+        height: 220px;
+}
+
+.card_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_txt h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card_txt p{
+    font-size: 14px;
+}
+
+.card_txt h2{
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.basket_price{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+}
+
+.basket_price p{
+    cursor: pointer;
+    color: #87878787;
+    font-weight: 600;
+}
+
+.purchase{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.purchase h1{
+    margin-top: 40px;
+    font-weight: 500;
+}
+

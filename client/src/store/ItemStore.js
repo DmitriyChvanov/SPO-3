@@ -12,19 +12,7 @@ export default class ItemStore {
       { id: 3, name: "best sell" },
       { id: 4, name: "flash" },
     ];
-    this._items = [
-        { id: 0, name: "High", price: 2000, img: "https://i.imgur.com/5o7KJp9.png" },
-        { id: 1, name: "Low", price: 3000, img: {zatychka} },
-        { id: 2, name: "Medium", price: 5000, img: {zatychka} },
-        { id: 3, name: "Creme", price: 1000, img: {zatychka} },
-        { id: 4, name: "Naxyi", price: 4000, img: {zatychka} },
-        { id: 5, name: "High", price: 2000, img: {zatychka} },
-        { id: 6, name: "Low", price: 3000, img: {zatychka} },
-        { id: 7, name: "Medium", price: 5000, img: {zatychka} },
-        { id: 8, name: "Creme", price: 1000, img: {zatychka} },
-        { id: 9, name: "Naxyi", price: 4000, img: {zatychka} },
-        
-    ]
+    this._items = []
     this._basket = JSON.parse(localStorage.getItem(STORAGE_BASKET_KEY) || "[]");
     this._clothes = [];
     this._selectedType = {};

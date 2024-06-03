@@ -1,10 +1,11 @@
 import { observer } from "mobx-react-lite"
 import styles from "./ItemList.module.css"
-import { useContext } from "react"
-import { Context } from "../.."
+import { useContext, useEffect } from "react"
 import Item from "../Item/Item"
+import { Context } from "../.."
 
 const ItemList = observer(() => {
+    
     
     const {item} = useContext(Context)
 
