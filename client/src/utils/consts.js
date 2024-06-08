@@ -7,3 +7,5 @@ export const ITEM_ROUTE = "/item"
 export const ABOUT_ROUTE = "/about"
 export const CONTACTS_ROUTE = "/contacts"
 export const ACCOUNT_ROUTE = '/account'
+export const PAYMENT_ROUTE = '/payment'
+export const SUCCESS_ROUTE = '/success'

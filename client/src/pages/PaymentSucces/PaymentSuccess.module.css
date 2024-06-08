@@ -1,0 +1,16 @@
+.main_success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main_success p{
+    margin-top: 20px;
+    width: 700px;
+    text-align: justify;
+}
+
+.main_success a{
+    text-decoration: none;
+}

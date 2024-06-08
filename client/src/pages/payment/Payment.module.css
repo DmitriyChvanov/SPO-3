@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.paymentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.paymentContainer input{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.paymentContainer h1, .paymentContainer h2 {
+    margin-bottom: 20px;
+}
+
+.paymentContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.paymentContainer form label {
+    margin-bottom: 10px;
+}
+
+.paymentContainer form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.paymentContainer form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.paymentContainer form button:hover {
+    background-color: #45a049;
+}
+
+
+.paymentContainer a{
+    text-decoration: none;
+}

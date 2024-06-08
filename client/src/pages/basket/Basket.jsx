@@ -4,11 +4,14 @@ import MyHeader from "../../components/header/MyHeader"
 import styles from "./Basket.module.css"
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import MyBtn from "../../components/MyBtn/MyBtn"
 import { observer } from "mobx-react-lite"
 
 const Basket = observer(({basketId}) => {
+
+
+    const navigate = useNavigate();
 
     const [basketItems, setBasketItems] = useState([]);
 
@@ -73,7 +76,9 @@ const Basket = observer(({basketId}) => {
 
                 <div className={styles.purchase}>
                     <h1>{totalPrice} ₽</h1>
-                    <MyBtn>Перейти к оплате</MyBtn>
+                    <div onClick={() => navigate('/payment', {state: {totalPrice} })}>
+                        <MyBtn>Перейти к оплате</MyBtn>
+                    </div>
                 </div>
             </ul>
             <MyMap/>

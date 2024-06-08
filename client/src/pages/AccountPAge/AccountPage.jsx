@@ -49,7 +49,7 @@ const AccountPage = observer(({basketId}) => {
                 <h1>Здравствуй, {user.email}</h1>
                 <h1>Заказы</h1>
                 <div className={styles.order}>
-                    <p>Ваш заказ - {randomString}</p>
+                    <p>Ваш заказ: #{randomString}</p>
                     <div className={styles.order_cards}>
                         {basketItems.map(item => (
                             <div className={styles.card} style={{background: `url(http://localhost:5000/${item.item.img})`}}>
