@@ -24,8 +24,8 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/DmitriyChvanov/SPO-3/
+cd ../SPO-3/
 ```
 
 ### 2. Установка зависимостей
@@ -35,13 +35,13 @@ cd <repository-folder>
 ```bash
 # Для клиента
 cd client
-npm install
+npm install / npm i
 # или
 yarn install
 
 # Для сервера
 cd server
-npm install
+npm install / npm i
 # или
 yarn install
 ```
@@ -80,9 +80,7 @@ SECRET_KEY=pkstop
 
 ```bash
 cd server
-npm start
-# или
-yarn start
+npm run dev
 ```
 
 ### 2. Запуск клиента
@@ -96,7 +94,7 @@ npm start
 yarn start
 ```
 
-Клиент обычно будет доступен по адресу `http://localhost:3000`, а сервер — по адресу `http://localhost:5000` или на порту, который вы указали в конфигурации.
+Клиент будет доступен по адресу `http://localhost:3000`, а сервер — по адресу `http://localhost:5000`
 
 ## Дополнительная информация
 
