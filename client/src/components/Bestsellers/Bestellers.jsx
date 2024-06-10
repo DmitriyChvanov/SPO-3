@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom"
 import MyBtn from "../MyBtn/MyBtn"
 import Slider from "../Slider/Slider"
 import styles from "./Bestellers.module.css"
+import { SHOP_ROUTE } from "../../utils/consts"
 
 const Bestellers = () => {
 return(
@@ -9,7 +11,7 @@ return(
         <div className={styles.txt_card}>
             <h2>Бестселлеры</h2>
             <p>Легендарные продукты, <br />завоевавшие любовь <br />наших клиентов</p>
-            <MyBtn>Смотреть все</MyBtn>
+            <NavLink to={SHOP_ROUTE}><MyBtn>Смотреть все</MyBtn></NavLink>
         </div>
 
         <Slider/>

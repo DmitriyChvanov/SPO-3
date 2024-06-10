@@ -1,10 +1,10 @@
-.main_main_page{
+.main_main_page {
     background-image: url("./../../assets/img/main_bg.png");
     height: 650px;
     font-family: "Raleway", sans-serif;
 }
 
-.main_main_page a{
+.main_main_page a {
     text-decoration: none;
     color: black;
 }
@@ -16,7 +16,6 @@
     width: 100%;
     gap: 60px;
     justify-content: center;
-
 }
 
 .txt_block {
@@ -34,11 +33,69 @@
     cursor: pointer;
 }
 
-.card_txt{
+.card_txt {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-weight: 500;
-    
+}
+
+@media (max-width: 1200px) {
+    .content {
+        padding: 20px 80px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        padding: 20px 40px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .txt_block {
+        padding-top: 40px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_main_page {
+        height: auto; 
+    }
+
+    .content {
+        padding: 20px 20px;
+    }
+
+    .txt_block {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .txt_block {
+        padding-top: 10px;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .card_txt {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .content {
+        padding: 10px 10px;
+    }
+
+    .txt_block {
+        font-size: 12px;
+    }
 }

@@ -1,4 +1,4 @@
-.BannerFourth_main{
+.BannerFourth_main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,13 +6,12 @@
     height: 400px;
 }
 
-.BannerFourth_main a{
+.BannerFourth_main a {
     text-decoration: none;
     color: black;
-
 }
 
-.card{
+.card {
     background-image: url('./../../assets/img/Banner4_bg.jpg');
     background-repeat: no-repeat;
     height: 400px;
@@ -21,10 +20,55 @@
     justify-content: center;
 }
 
-.card_txt{
+.card_txt {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .BannerFourth_main {
+        height: auto;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .BannerFourth_main {
+        padding: 20px;
+    }
+
+    .card {
+        height: auto;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    .BannerFourth_main {
+        padding: 10px;
+    }
+
+    .card {
+        height: auto;
+        background-size: cover;
+    }
+
+    .card_txt {
+        padding: 10px;
+    }
 }

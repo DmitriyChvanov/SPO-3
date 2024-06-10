@@ -1,4 +1,4 @@
-.main_item{
+.main_item {
     width: 270px;
     height: 350px;
     background: #F4F1ED;
@@ -6,27 +6,88 @@
     padding: 20px;
 }
 
-.main_item a{
+.main_item a {
     text-decoration: none;
     color: black;
 }
 
-.txt{
+.txt {
     font-size: 18px;
     font-weight: 500;
 }
 
-.card_info{
+.card_info {
     display: flex;
     justify-content: space-between;
     height: 310px;
     align-items: flex-end;
 }
 
-.price{
+.price {
     font-size: 15px;
     font-weight: 500;
 }
 
+@media (max-width: 1200px) {
+    .main_item {
+        width: 220px;
+        height: 320px;
+        padding: 15px;
+    }
 
+    .txt {
+        font-size: 16px;
+    }
 
+    .price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main_item {
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .txt {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_item {
+        width: 180px;
+        height: 280px;
+        padding: 10px;
+    }
+
+    .txt {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main_item {
+        width: 150px;
+        height: 250px;
+        padding: 5px;
+    }
+
+    .txt {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 8px;
+    }
+}

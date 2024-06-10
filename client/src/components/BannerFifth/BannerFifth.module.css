@@ -1,4 +1,4 @@
-.BannerFifth_main{
+.BannerFifth_main {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,16 +7,63 @@
     gap: 70px;
 }
 
-.BannerFifth_main a{
+.BannerFifth_main a {
     text-decoration: none;
     color: black;
-
 }
 
-.txt_card{
+.txt_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .BannerFifth_main {
+        gap: 50px;
+    }
+
+    .txt_card {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .BannerFifth_main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        gap: 40px;
+    }
+
+    .txt_card {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .BannerFifth_main {
+        margin-top: 80px;
+        gap: 30px;
+    }
+
+    .txt_card {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .BannerFifth_main {
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    .txt_card {
+        gap: 5px;
+        text-align: center;
+        align-items: center;
+    }
 }

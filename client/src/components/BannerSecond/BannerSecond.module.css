@@ -1,28 +1,67 @@
 .BannerSecond_main {
-    background-image: url("./../../assets/img/Banner2_bg.png") ;
+    background-image: url("./../../assets/img/Banner2_bg.png");
     background-color: #F6F3F0;
     height: 400px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
-    align-items: center;    
+    align-items: center;
 }
 
-.BannerSecond_main a{
+.BannerSecond_main a {
     text-decoration: none;
     color: black;
-
 }
 
-.card_txt h2{
+.card_txt h2 {
     line-height: 1.05;
     margin-bottom: 20px;
 }
 
-.card_txt{
+.card_txt {
     margin-right: 100px;
     text-align: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .card_txt {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .BannerSecond_main {
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card_txt {
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .BannerSecond_main {
+        padding: 20px;
+    }
+
+    .card_txt h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .BannerSecond_main {
+        padding: 10px;
+    }
+
+    .card_txt h2 {
+        font-size: 20px;
+    }
 }

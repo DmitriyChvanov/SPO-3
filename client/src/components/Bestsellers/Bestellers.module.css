@@ -16,3 +16,17 @@
     font-size: 18px;
 }
 
+.txt_card a{
+    text-decoration: none;
+}
+
+
+@media (max-width: 992px)  {
+    .main_Bestellers{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+}
+
