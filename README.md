@@ -80,7 +80,8 @@ SECRET_KEY=pkstop
 
 ```bash
 cd server
-npm run dev
+npm run dev ## Режим отладки
+npm start ## Запуск серверной части
 ```
 
 ### 2. Запуск клиента
